@@ -2,7 +2,13 @@
 
 provides a API to convert image(JPG, PNG) -> WEBP
 
+WebP is a modern image format that provides superior lossless and lossy compression for images on the web. Using WebP, webmasters and web developers can create smaller, richer images that make the web faster.
+
 The purpose of this repository is a project to convert image files to the next generation image format (webp).
+
+
+## Support
+![support](./docs/images/support.png)
 
 ## Requirement
 
