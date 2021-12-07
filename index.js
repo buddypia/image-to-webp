@@ -50,7 +50,7 @@ app.get("/", (req, res) => {
   res.send("OK");
 });
 
-app.post("/convert/image/to/webp", function (req, res) {
+app.post("/", function (req, res) {
   upload(req, res, function (err) {
     Logger.systemInfo("[START] image to webp");
 

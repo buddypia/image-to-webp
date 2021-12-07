@@ -44,11 +44,11 @@ q=50（quality 1~100, Optional pamameter）
 
 You can reduce the size of the image file by specifying the image quality.
 ```bash
-curl "localhost:3000/convert/image/to/webp" -X POST -F image_file=@image.png -F q=75 -o image.webp
+curl "localhost:3000/" -X POST -F image_file=@image.png -F q=75 -o image.webp
 ```
 or just simply call:
 ```bash
-curl "localhost:3000/convert/image/to/webp" -X POST -F image_file=@image.png -o image.webp
+curl "localhost:3000/" -X POST -F image_file=@image.png -o image.webp
 ```
 
 
