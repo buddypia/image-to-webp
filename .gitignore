@@ -120,5 +120,7 @@ dist
 # VSCode history
 .history
 
-# tmp
-tmp
+# save images
+tmp/result/*
+tmp/uploads/*
+!.gitkeep
