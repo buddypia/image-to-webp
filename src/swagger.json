@@ -24,13 +24,21 @@
         "summary": "Converts image files such as jpg and png to webp and returns them.",
         "description": "",
         "operationId": "imageToWebp",
-        "consumes": ["multipart/form-data"],
+        "consumes": "multipart/form-data",
         "parameters": [
           {
             "in": "formData",
+            "description": "Additional data to quality to server(1~100)",
+            "required": false,
+            "name": "q",
+            "type": "integer"
+          },
+          {
+            "in": "formData",
+            "description": "png or jpg file to upload.",
+            "required": true,
             "name": "file",
-            "type": "file",
-            "description": "png or jpg file to upload."
+            "type": "file"
           }
         ],
         "responses": {
