@@ -1,0 +1,54 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Image To Webp Converter API",
+    "version": "1.0.0",
+    "title": "Image To Webp Converter API",
+    "contact": {
+      "email": "shoridevel@gmail.com"
+    }
+  },
+  "host": "localhost:3001",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "IMAGE TO WEBP",
+      "description": "Convert image to webp"
+    }
+  ],
+  "schemes": ["http"],
+  "paths": {
+    "/": {
+      "post": {
+        "tags": ["IMAGE TO WEBP"],
+        "summary": "Converts image files such as jpg and png to webp and returns them.",
+        "description": "",
+        "operationId": "imageToWebp",
+        "consumes": ["multipart/form-data"],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "file",
+            "type": "file",
+            "description": "png or jpg file to upload."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "schema": {
+              "type": "file"
+            }
+          },
+          "400": {
+            "description": "bad request"
+          },
+          "404": {
+            "description": "not found"
+          }
+        },
+        "x-swagger-router-controller": "ImageToWebp"
+      }
+    }
+  }
+}
