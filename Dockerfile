@@ -11,6 +11,4 @@ COPY . .
 WORKDIR /usr/src/app/
 RUN yarn install --production=false
 
-EXPOSE 3001
-
 CMD ["yarn", "start"]
